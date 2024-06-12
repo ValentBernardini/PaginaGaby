@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DJ Website</title>
+  <!-- Referencia a los archivos CSS de Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <!-- Referencia a los archivos JS de Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://kit.fontawesome.com/407fac3167.js" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="imgs/">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-+9XgCbGFJyEgz+jzi4L1P+LgPTkCjh1nWdLJzEUbG+7klEU9X+VLV7PPLKvq3FqkmyI+Fl8WJ1tuZv1EmGGQIQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Referencia a tu archivo CSS personalizado -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark ">
+    <a class="navbar-brand text-warning" href="#">DJ GABY MUÑOZ</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#bio">Biografía</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#photos">Fotos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#redes-sociales">Redes Sociales</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+ <!-- Jumbotron -->
+<div class="jumbo-main">
+  <div class="jumbotron text-light jumbotron-parallax">
+    <div class="container my-0 text-center" style="width:100%">
+      <h1 class="display-4">DJ GABY MUÑOZ</h1>
+      <p class="lead">Bienvenido a mi sitio web</p>
+      <a href="#contact-e" class="btn btn-lg btn-outline-warning mt-3">Contactame</a>
+    </div> 
+    
+    <a href="#bio" class="jumbotron-chevron" onclick="scrollToSection(event)">
+      <i class="fas fa-chevron-down"></i>
+    </a>
+  </div>
+</div>
+
+<section id="bio" class="bg-black text-light py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h2 data-aos="fade-down" class="text-uppercase mb-4">Biografía</h2>
+        <p data-aos="fade-up" class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod sapien id nisl placerat, non malesuada est bibendum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed condimentum enim et nisi laoreet tincidunt. Fusce sit amet augue lectus. Sed efficitur auctor ex in sagittis.</p>
+        <p data-aos="fade-up" class="lead">Vestibulum tincidunt est sed eros convallis lacinia. Pellentesque eu risus id sapien imperdiet egestas. Sed vitae quam finibus, pulvinar est eu, venenatis mi. Etiam non lectus velit. Morbi vel sapien nec augue commodo bibendum. Nulla et augue vitae purus suscipit blandit. Ut sed neque blandit, rhoncus neque eu, tempor orci. Fusce eu augue vel magna iaculis interdum in ac dui. Sed tristique elit vel tellus sagittis, a dictum est efficitur. Aenean quis lacus commodo, suscipit tortor at, commodo sapien.</p>
+      </div>
+      <div data-aos="fade-left" class="col-md-6">
+        <img src="imgs/gabyfoto1.jpg" alt="DJ" class="img-fluid rounded">
+      </div>
+    </div>
+  </div>
+</section>
+
+    
+      </section>
+      <!-- Fotos -->
+      <section id="photos" class="py-5">
+        <div class="container">
+          <h2 class="text-uppercase text-light mb-4 text-center">Fotos</h2>
+          <div class="row">
+            <div data-aos="fade-right" class="col-md-4 mb-4">
+              <img src="imgs/gabyfoto2.jpg" alt="Foto 1" class="img-fluid rounded">
+            </div>
+            <div data-aos="fade-up" class="col-md-4 mb-4">
+              <img src="imgs/gabyfoto3.jpg"Foto 2" class="img-fluid rounded">
+            </div>
+            <div data-aos="fade-left"class="col-md-4 mb-4">
+              <img src="imgs/gabyfoto4.jpg" alt="Foto 3" class="img-fluid rounded">
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="proximas-fechas" id="events">
+        <h2 class="text-light text-center">Aca Me Encontras</h2>
+        <div class="row justify-content-center">
+          <div class="card-evento col-sm-4">
+            <div data-aos="flip-up" data-aos-duration="1700" class="card">
+              <div class="card-body">
+                <h3>Casa De Piedra</h3>
+                <img src="imgs/cdp.jpg" alt="Logo Discoteca 1" class="logo">
+              </div>
+            </div>
+          </div>
+          <div class="card-evento col-sm-4">
+            <div data-aos="flip-up" data-aos-duration="1700" class="card">
+              <div class="card-body">
+                <h3>Factory XL</h3>
+                <img src="imgs/xl.jpg" alt="Logo Discoteca 2" class="logo">
+              </div>
+            </div>
+          </div>
+          <div class="card-evento col-sm-4">
+            <div data-aos="flip-up" data-aos-duration="1700" class="card">
+              <div class="card-body">
+                <h3>Roca Rosa</h3>
+                <img src="imgs/roca.jpg" alt="Logo Discoteca 3" class="logo">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div data-aos="fade-up" class="card-wsp" id="contact-e">
+      <div class="card text-light" >
+        <div class="card-header"><h1 style="font-size: 2rem;">CONTACTAME VIA WHATSAPP</h1></div>
+        <div class="card-body text-success">
+          <h5 class="card-title" style="padding-bottom: 30px; color: #fff;">Apreta el Icono</h5>
+          <a href="https://wa.me/5493585075478" target="_blank"><img src="imgs/whatsapp.png" alt="WhatsApp Icon"></a>
+        </div>
+      </div>
+    </div>
+      
+      <section class="spoty-iframe">
+        <h2 data-aos="fade-right">Una de nuestras Playlist</h2>
+        <div data-aos="fade-left" class="spoty">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/49p3GGMXUBzrMgei1V4Wnk?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+      </section>
+
+
+      <!-- <section data-aos="zoom-in-up" class="contacto-main" id="contact">
+        -- <div class="form-container">
+            <h2 class="text-light">Formulario de Contacto via Email</h2>
+          <div id="contacto">
+            <div class="contenedor-form">
+              <form id="contact-form" action="https://formspree.io/f/xdovzpke" method="POST" onsubmit="return enviarFormulario()">
+                <div class="fila mitad">
+                  <input type="text" placeholder="Nombre Completo" name="name" class="input-mitad input-oscuro" id="nombre">
+                  <input type="email" name="email" placeholder="Email" class="input-mitad input-oscuro" id="email">
+                </div>
+                <div class="fila" id="tema">
+                  <input type="text" placeholder="Tema..." class="input-full input-oscuro" id="tema">
+                </div>
+                <div class="fila">
+                  <textarea name="message" id="" cols="30" rows="10" placeholder="Tu Mensaje..." class="input-full input-oscuro" id="mensaje"></textarea>
+                </div>
+      
+                <input type="submit" value="Send Message" class="btn-enviar ">
+              </form>
+            </div>
+          </div>
+        </div>  -->
+
+
+        
+        
+      </section>
+      
+      
+    
+       <!-- <section id="redes-sociales">
+        <h3>Sigueme en mis Redes</h3>
+         <div class="social-icon">
+          <a href="https://www.facebook.com/tu_pagina"><img src="imgs/facebook.png" alt="Facebook"></a>
+        </div> 
+        <div class="social-icon">
+          <a href="https://www.instagram.com/tu_pagina"><img src="imgs/instagram.png" alt="Instagram"></a>
+        </div>
+        <div class="social-icon">
+          <a href="https://www.linkedin.com/tu_pagina"><img src="imgs/spotify.png" alt="Spotify"></a>
+        </div>
+        <div class="social-icon">
+          <a href="https://www.twitter.com/tu_pagina"><img src="imgs/twitter-icon.png" alt="Twitter"></a>
+        </div> 
+      </section> -->
+
+
+      <div class="redes-sociales text-light">
+        <h1>Redes Sociales</h1>
+        <ul>
+          <li><a href="https://www.instagram.com/djgabymunoz/?hl=es-la"><img src="imgs/instagram.png" alt="Red social 1"></a></li>
+          <li><a href="https://open.spotify.com/user/gabymunoz0022?si=f1da9c9669634bb5"><img src="imgs/spotify.png" alt="Red social 2"></a></li>
+          <!-- Agrega más elementos de lista para las otras redes sociales -->
+        </ul>
+      </div>
+
+
+      
+     
+      <script>
+        AOS.init();
+
+
+        function scrollToSection(event) {
+  event.preventDefault();
+  const section = document.querySelector(event.target.getAttribute('href'));
+  section.scrollIntoView({behavior: 'smooth', block: 'start'});
+}
+
+
+      </script>

@@ -1,0 +1,543 @@
+/* Importar la fuente desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
+html{
+    scroll-behavior: smooth;
+    font-size: 10pt;
+    line-height: 1.4;
+    font-weight: 400;
+    -webkit-text-size-adjust: 100%;
+    
+}
+
+html, body{
+  overflow-x: hidden;
+}
+
+/* Aplicar la fuente al cuerpo de la página */
+body {
+    background-color: #000;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+  height: 100%;box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-kerning: auto;
+  margin: 0;
+
+  
+}
+
+.navbar {
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  
+  .navbar-brand {
+    color: #fff; /* color de texto de la marca */
+  }
+  
+  .navbar-nav li a {
+    color: #fff; /* color de texto de los elementos del menú */
+  }
+  .jumbo-main h1{
+    color: #ffc107;
+    filter: brightness(1);
+  }
+  .jumbotron {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  .jumbotron.text-light {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+  }
+  .jumbotron-parallax {
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    filter: brightness(0.8); /* Reduce brightness to 50% */
+  }
+  
+  .jumbotron-parallax {
+    background-color: rgba(0, 0, 0, 0.7);
+    background-image: url('imgs/djimg.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 800px; /* Ajusta la altura según tus necesidades */
+    
+  }
+  
+  /* Agrega esta regla para dispositivos móviles */
+  @media (max-width: 480px) {
+    .jumbotron-parallax {
+      background-image: url('imgs/djimg.jpeg'); /* Cambia la imagen de fondo para dispositivos móviles */
+      background-size: cover;
+      background-position: center;
+      height: 500px; /* Ajusta la altura según tus necesidades */
+    }
+  }
+  
+  .jumbotron-parallax::before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.5); /* Increase opacity to 90% */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+  }
+  .jumbotron img {
+    height: 900px;
+  }
+  
+  .jumboImg {
+    height: 200px;
+  }
+  
+  .jumbotron-chevron {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    font-size: 3rem;
+    animation: arrow-bounce 1.5s infinite;
+  }
+  
+  @keyframes arrow-bounce {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+.section {
+  background-color: #000;
+  padding: 50px 0;
+}
+
+.logo {
+  width: 100px; /* Ajusta el ancho del logo */
+  height: 100px; /* Ajusta la altura del logo */
+  margin: 20px auto; /* Ajusta el margen del logo */
+  border-radius: 10px; /* Ajusta el borde redondeado del logo */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Ajusta la sombra del logo */
+}
+.proximas-fechas {
+    background-color: #000;
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 50px;
+  }
+  
+  .eventos {
+    
+    margin-top: 30px;
+  }
+  
+  .card {
+    background-color: #000;
+    border: solid 2px #ffc107;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.1s ease-in-out;
+  }
+
+  .card:hover{
+    transform: scale(1.15);
+  }
+  
+  .card-title {
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  
+  .card-text {
+    font-size: 0.9em;
+    margin-bottom: 0;
+  }
+.eventos{
+    padding: 10px;
+}  
+.card-evento {
+  text-align: center; /* Centra el contenido horizontalmente */
+}
+
+.card-evento.card-body {
+  display: flex; /* Convierte el contenido en un flex container */
+  flex-direction: column; /* Alinea el contenido verticalmente */
+  align-items: center; /* Centra el contenido horizontalmente */
+}
+
+.card-evento.logo {
+  margin: 20px auto; /* Añade un margen para separar el logo del título */
+}
+
+.jumbotron-parallax {
+    background-image: url('imgs/djimg.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 800px;
+  }
+
+  spoty-iframe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .spoty-iframe h2 {
+    color: #fff;
+    padding-left: 30px;
+  }
+  
+  .spoty-iframe iframe {
+    padding-left: 25px;
+    width: 100%; /* Ajusta el ancho para que se adapte a la pantalla móvil */
+    height: 300px; /* Ajusta la altura según tus necesidades */
+    border-radius: 10px; /* Agrega un borde redondeado para mejorar la apariencia */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Agrega una sombra para dar profundidad */
+    padding-right: 15px;
+  }
+
+  .contacto-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+    padding-left: 20px;
+    padding-top: 40px;
+  }
+
+  .form-container {
+    flex-basis: 100%;
+    max-width: 35%;
+  }
+  
+  .contenedor-form {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #000;
+  }
+  
+  .fila {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    
+  }
+
+  #tema{
+    max-width: 80%;
+  }
+  
+  .mt {
+    margin-top: 20px;
+  }
+  
+  .input-mitad {
+    padding: 15px;
+    margin: 5px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    flex-basis: 49%;
+  }
+  
+  .input-full {
+    padding: 15px;
+    margin: 5px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    flex-basis: 100%;
+  }
+  
+  .btn-enviar {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .card-wsp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+  }
+
+  .card-wsp .card{
+    height: 300px;
+    border: #000;
+  }
+
+  .card-wsp img{
+    width: 100px;
+    height: 100px;
+  }
+  
+
+  
+  .redes-sociales {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .redes-sociales h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .redes-sociales ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .redes-sociales li {
+    margin: 10px;
+    transform: scale(1.5s ease-in-out);
+    cursor: pointer;
+  }
+  
+  .redes-sociales img {
+    max-width: 100%;
+    height: 100px;
+  }
+  #redes-sociales img:hover {
+    transform: scale(1.4);
+  }
+  
+  #redes-sociales h3{
+    color: #fff;
+    
+  }
+
+
+  
+
+ /* Estilos para dispositivos con un ancho máximo de 480px */
+@media (max-width: 480px) {
+  body {
+    font-size: 8pt;
+    overflow-y: scroll;
+  }
+
+  .jumbotron-parallax {
+    background-image: url('imgs/djimg.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Ocupa la totalidad del largo de la pantalla */
+  }
+
+  .jumbotron img {
+    height: 500px;
+  }
+
+  .jumboImg {
+    height: 100px;
+  }
+
+  .jumbotron-chevron {
+    font-size: 2rem;
+  }
+
+  .card-evento {
+    padding: 10px;
+  }
+
+
+  .form-container {
+    max-width: 100%;
+  }
+
+  .contenedor-form {
+    max-width: 100%;
+  }
+
+  .input-mitad {
+    flex-basis: 100%;
+  }
+
+  .image-container {
+    padding-top: 10px;
+  }
+
+  .contacto-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contacto-main h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: justify;
+    padding: 20px;
+  }
+
+  .contacto-container {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .contacto {
+    margin-bottom: 20px;
+  }
+
+  .contacto-container img {
+    max-width: 100%; /* Ajusta el tamaño del icono de WhatsApp */
+    padding-right: 420px;
+  }
+
+  .form-container {
+    width: 100%;
+  }
+
+  .card-wsp {
+    color: #fff;
+  }
+
+  .card-wsp img {
+    width: 100px;
+  }
+
+  #redes-sociales {
+    flex-wrap: wrap;
+  }
+
+  #redes-sociales a {
+    flex: 1 0 50%; /* Cada red social ocupa el 50% del ancho en dispositivos móviles */
+    margin-bottom: 10px;
+  }
+}
+
+/* Estilos para dispositivos con un ancho máximo de 768px */
+@media (max-width: 768px) {
+  body {
+    font-size: 9pt;
+  }
+
+  .jumbotron img {
+    height: 700px;
+  }
+
+  .jumbotron-parallax {
+    background-image: url('imgs/djimg.jpeg');
+  }
+
+  .jumboImg {
+    height: 150px;
+  }
+
+  .jumbotron-chevron {
+    font-size: 2.5rem;
+  }
+
+  .form-container {
+    max-width: 100%;
+  }
+
+  .contenedor-form {
+    max-width: 100%;
+  }
+    .spoty-iframe iframe {
+    width: 100%; /* Ajusta el ancho para que se adapte a la pantalla móvil */
+    height: 400px; /* Ajusta la altura según tus necesidades */
+    padding-left: 10px; /* Ajusta el padding para que se vea bien en mobile */
+  }
+    .spoty iframe {
+       width: 100%;
+     }
+     .spoty-iframe h2{
+      padding-left: 50px;
+     }
+   }
+
+
+/* Estilos para dispositivos con un ancho máximo de 992px */
+@media (max-width: 992px) {
+  body {
+    font-size: 9.5pt;
+  }
+
+  .jumbotron img {
+    height: 600px;
+  }
+
+  .jumbotron-parallax {
+    background-image: url('imgs/djimg.jpeg');
+  }
+
+  .jumboImg {
+    height: 150px;
+  }
+
+  .jumbotron-chevron {
+    font-size: 2.5rem;
+  }
+
+  .form-container {
+    max-width: 100%;
+  }
+
+  .contenedor-form {
+    max-width: 100%;
+  }
+}
+
+/* Estilos para dispositivos con un ancho máximo de 1200px */
+@media (max-width: 1200px) {
+  body {
+    font-size: 10pt;
+  }
+
+  .jumbotron img {
+    height: 700px;
+  }
+
+  .jumboImg {
+    height: 200px;
+  }
+
+  .jumbotron-chevron {
+    font-size: 3rem;
+  }
+
+  .form-container {
+    max-width: 100%;
+  }
+
+  .contenedor-form {
+    max-width: 100%;
+  }
+}
