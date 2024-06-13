@@ -300,7 +300,10 @@ body {
     height: 100px;
   }
   
-
+  
+  .rounded-video {
+    border-radius: 15px; /* Ajusta el valor según tus necesidades */
+  }
   
   .redes-sociales {
     text-align: center;
